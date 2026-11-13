@@ -1,0 +1,1 @@
+all of the kicad files will be here (libraries, sch and pcb files, etc.)
