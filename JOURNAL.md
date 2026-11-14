@@ -30,3 +30,24 @@ since im in no rush and it looks nice, im going with blue. i want it to look goo
 - im really tempted to make an arduino or pi zero type board now.....
 
 bottom line: got the schematic done, will change layout and art tomorrow
+
+## NOVEMBER 14: pcb layout + updated schematic
+*total hours: ~4 (3:49)*
+
+i dont know why today took 4 hours, i think it was just still me getting adjusted to kicad. anyways, to make it look less generic, i made it look more like a raspberry pi zero.
+i added a jst connector slot for batteries, as well as the charging module for it. i also added some mounting holes, a micro sd card slot, and some extra power pins. the only thing
+i need to add to my pcb now is art and figure out how to get assembly working.
+
+*front*
+
+<img width="616" height="909" alt="image" src="https://github.com/user-attachments/assets/d2e005d9-e41b-4e84-acdd-91c4ab0f2a4f" />
+
+*back*
+
+<img width="846" height="860" alt="image" src="https://github.com/user-attachments/assets/458abb91-b477-4230-a81b-999cd0c0e5d9" />
+
+if you have a strong eye, you'd notice that it's pretty bare. that's a job for another day... or maybe tonight, we'll see. 
+
+misc
+- the color in the screenshot isn't exactly the color that jlcpcb provides
+- i hope this battery charger works because i dont want any fires being started (it's my first time making a charging circuit)
