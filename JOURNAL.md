@@ -51,3 +51,39 @@ if you have a strong eye, you'd notice that it's pretty bare. that's a job for a
 misc
 - the color in the screenshot isn't exactly the color that jlcpcb provides
 - i hope this battery charger works because i dont want any fires being started (it's my first time making a charging circuit)
+
+## NOVEMBER 15-17TH: FINISHING TOUCHES
+
+im talking art, routing, quick arduino sketch, a little bit of everything. this took around **5 hours** staggered across a few days. 
+
+<img width="376" height="724" alt="image" src="https://github.com/user-attachments/assets/76b3b1f0-35d7-417c-97d7-4c4484cf6fcd" />
+
+when i say quick sketch, it's just lights. find the file in /firmware or just copy-paste this after hooking it up to your computer.
+
+```cpp
+void setup(){
+pinMode(1, OUTPUT); pinMode(2, OUTPUT); pinMode(3, OUTPUT);
+}
+
+// so i dont need to call redundant digital write calls
+void togglesnowflake(int pin){
+digitalWrite(pin, HIGH);
+delay(2000);
+digitalWrite(pin, LOW);
+delay(2000);
+}
+
+void loop(){
+togglesnowflake(1);
+togglesnowflake(2);
+togglesnowflake(3);
+}
+```
+
+this is untested but... come on, if this doesnt work, im retiring from programming for good.
+
+i sent this to the slack channel but never logged this in the journal (jlcpcb color):
+
+<img width="1399" height="713" alt="image" src="https://github.com/user-attachments/assets/c44b964d-1346-4e88-bc5a-9b34eedb7ed6" />
+
+please note that there's a BUNCH of **WARNINGS**, not errors. most, if not all, are 
