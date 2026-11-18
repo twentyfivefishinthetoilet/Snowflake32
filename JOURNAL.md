@@ -62,7 +62,9 @@ when i say quick sketch, it's just lights. find the file in /firmware or just co
 
 ```cpp
 void setup(){
+Serial.begin(115200);
 pinMode(1, OUTPUT); pinMode(2, OUTPUT); pinMode(3, OUTPUT);
+Serial.println("happy holidays!");
 }
 
 // so i dont need to call redundant digital write calls
